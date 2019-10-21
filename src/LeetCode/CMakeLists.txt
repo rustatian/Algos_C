@@ -3,5 +3,5 @@ project(LeetCode)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(remvov
-        remove_vovels_from_string/remove_vovels_from_string.cpp)
+add_subdirectory(remove_vovels_from_string)
+add_subdirectory(two_sum)
