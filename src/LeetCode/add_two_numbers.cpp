@@ -1,6 +1,4 @@
-//
-// Created by Valery Piashchynski on 11/9/19.
-//
+#include <cstdio>
 
 /**
  * Definition for singly-linked list.
