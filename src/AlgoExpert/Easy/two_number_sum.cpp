@@ -19,10 +19,6 @@ vector<int> twoNumberSum(vector<int> array, int targetSum) {
     return {};
 }
 
-vector<int> twoNumberSum2(vector<int> array, int targetSum) {
-
-}
-
 
 TEST_CASE("twoNumberSum", "[twoNumberSum]") {
     auto res = twoNumberSum(vector<int>{3, 5, -4, 8, 11, 1, -1, 6}, 10);

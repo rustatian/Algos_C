@@ -11,8 +11,6 @@ endif()
 find_package(Catch2 CONFIG REQUIRED)
 find_package(Boost "1.73" REQUIRED)
 
-
-
 add_executable(tns two_number_sum.cpp)
 target_link_libraries(tns Catch2::Catch2)
 
