@@ -5,7 +5,6 @@
 #include <boost/container/vector.hpp>
 
 bool isValidSubsequence(boost::container::vector<int> array, boost::container::vector<int> sequence) {
-    // Write your code here.
     int sIndx = 0;
     for (auto &num: array) {
         if (sIndx == sequence.size())

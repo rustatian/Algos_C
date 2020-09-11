@@ -16,3 +16,6 @@ target_link_libraries(tns Catch2::Catch2)
 
 add_executable(valSeq validate_sequence.cpp)
 target_link_libraries(valSeq Catch2::Catch2 ${Boost_LIBRARIES})
+
+add_executable(fcvINbst find_closest_value_in_BST.cpp)
+target_link_libraries(fcvINbst PRIVATE Catch2::Catch2)
