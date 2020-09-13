@@ -2,7 +2,6 @@
 
 #include <vector>
 #include "catch2/catch.hpp"
-#include <math.h>
 
 class BST {
 public:

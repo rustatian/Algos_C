@@ -19,3 +19,6 @@ target_link_libraries(valSeq Catch2::Catch2 ${Boost_LIBRARIES})
 
 add_executable(fcvINbst find_closest_value_in_BST.cpp)
 target_link_libraries(fcvINbst PRIVATE Catch2::Catch2)
+
+add_executable(branch_sums branch_sums.cpp)
+target_link_libraries(branch_sums PRIVATE Catch2::Catch2)
