@@ -25,7 +25,7 @@ public:
         if (i >= values.size())
             return nullptr;
         std::vector<BinaryTree *> queue = {this};
-        while (queue.size() > 0) {
+        while (!queue.empty()) {
             BinaryTree *current = queue[0];
             queue.erase(queue.begin());
             if (current->left == nullptr) {
