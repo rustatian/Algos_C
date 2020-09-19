@@ -1,8 +1,8 @@
+#define CATCH_CONFIG_MAIN
+
 #include <cstdlib>
 #include <vector>
 #include "catch2/catch.hpp"
-
-#define CATCH_CONFIG_MAIN
 
 class BinaryTree {
 public:
