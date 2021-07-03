@@ -19,7 +19,7 @@ public:
 
 class TestBinaryTree : public BinaryTree {
 public:
-    TestBinaryTree(int value) : BinaryTree(value) {};
+    explicit TestBinaryTree(int value) : BinaryTree(value) {};
 
     BinaryTree *insert(std::vector<int> values, int i = 0) {
         if (i >= values.size())
@@ -47,6 +47,14 @@ public:
 std::vector<int> branchSums(BinaryTree *root) {
     // Write your code here.
     return {};
+}
+
+void branch_sums_helper(BinaryTree *node, int sum, std::vector<int> *res) {
+    if (node == nullptr) {
+        return;
+    }
+
+
 }
 
 TEST_CASE("branchSums", "[branchSums]") {

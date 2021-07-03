@@ -9,7 +9,7 @@ endif()
 
 # TESTS
 find_package(Catch2 CONFIG REQUIRED)
-find_package(Boost "1.73" REQUIRED)
+find_package(Boost REQUIRED)
 
 add_executable(tns two_number_sum.cpp)
 target_link_libraries(tns Catch2::Catch2)
@@ -22,3 +22,6 @@ target_link_libraries(fcvINbst PRIVATE Catch2::Catch2)
 
 add_executable(branch_sums branch_sums.cpp)
 target_link_libraries(branch_sums PRIVATE Catch2::Catch2)
+
+add_executable(hb_pq heap_based_pq.cpp)
+target_link_libraries(hb_pq PRIVATE Catch2::Catch2)

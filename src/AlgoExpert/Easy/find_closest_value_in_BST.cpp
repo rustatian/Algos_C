@@ -9,7 +9,7 @@ public:
     BST *left;
     BST *right;
 
-    BST(int val);
+    explicit BST(int val);
 
     BST &insert(int val);
 };
