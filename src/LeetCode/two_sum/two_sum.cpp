@@ -24,24 +24,23 @@ TEST_CASE("TWO SUM", "[twoSum]") {
     auto resint = 0;
 
     auto res = Solution{};
-    auto rr = res.twoSum(v, resint);
+    auto rr = res.twoSum(v, 9);
 }
 
 // Brute force
 std::vector<int> Solution::twoSum(std::vector<int> &nums, int target) {
-    auto result = std::vector<int>{};
     auto values = std::map<int, int>{};
 
+    for (auto i = 0; i < nums.size(); ++i) {
+        int diff = target - nums.at(i);
 
-    for (auto &it: nums) {
-        int diff = target - nums.at(result.at(it));
-
-        if (values.contains(diff)) {
-            return std::vector<int>{diff, it};
+        if (values.count(diff)) {
+            return std::vector<int>{values.at({diff}), i};
         }
 
-
+        values.insert({nums[i], i});
     }
-    return result;
+
+    return std::vector<int>{};
 }
 
