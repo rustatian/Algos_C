@@ -27,11 +27,14 @@ public:
         std::vector<BinaryTree *> queue = {this};
         while (!queue.empty()) {
             BinaryTree *current = queue[0];
+
             queue.erase(queue.begin());
+
             if (current->left == nullptr) {
                 current->left = new BinaryTree(values[i]);
                 break;
             }
+
             queue.push_back(current->left);
             if (current->right == nullptr) {
                 current->right = new BinaryTree(values[i]);

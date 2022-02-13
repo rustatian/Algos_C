@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.17 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.22 FATAL_ERROR)
 project(easy)
 set(CMAKE_CXX_STANDARD 20)
 
@@ -18,10 +18,10 @@ add_executable(valSeq validate_sequence.cpp)
 target_link_libraries(valSeq Catch2::Catch2 ${Boost_LIBRARIES})
 
 add_executable(fcvINbst find_closest_value_in_BST.cpp)
-target_link_libraries(fcvINbst PRIVATE Catch2::Catch2)
+target_link_libraries(fcvINbst PRIVATE Catch2::Catch2 Catch2::Catch2WithMain)
 
 add_executable(branch_sums branch_sums.cpp)
-target_link_libraries(branch_sums PRIVATE Catch2::Catch2)
+target_link_libraries(branch_sums PRIVATE Catch2::Catch2 Catch2::Catch2WithMain)
 
 add_executable(hb_pq heap_based_pq.cpp)
-target_link_libraries(hb_pq PRIVATE Catch2::Catch2)
+target_link_libraries(hb_pq PRIVATE Catch2::Catch2 Catch2::Catch2WithMain)
