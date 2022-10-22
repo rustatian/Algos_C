@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
-project(LeetCode)
+project(leetcode)
 
 set(CMAKE_CXX_STANDARD 20)
 include(/home/valery/projects/cache/vcpkg/scripts/buildsystems/vcpkg.cmake)

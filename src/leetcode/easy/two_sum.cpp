@@ -1,8 +1,5 @@
 #include "two_sum.hpp"
 #include <vector>
-#include <iostream>
-
-#define CATCH_CONFIG_MAIN
 
 #include "catch.hpp"
 
@@ -21,10 +18,8 @@
 
 TEST_CASE("TWO SUM", "[twoSum]") {
     auto v = std::vector<int>{2, 7, 11, 15};
-    auto resint = 0;
-
     auto res = Solution{};
-    auto rr = res.twoSum(v, 9);
+    REQUIRE(std::vector<int>{0, 1} == res.twoSum(v, 9));
 }
 
 // Brute force
